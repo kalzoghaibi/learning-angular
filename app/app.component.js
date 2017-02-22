@@ -8,13 +8,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
+        this.pageTitle = "Acme Product Managment";
     }
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'pm-app',
-        template: "\n        <h1>Angular2: Getting Started</h1>\n    "
+        template: "\n        <div><h1>{{pageTitle}}</h1>\n            <pm-products></pm-products>\n        </div>\n    "
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
