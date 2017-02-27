@@ -1,8 +1,8 @@
 {
-    "name": "product-management",
+    "name": "tier-3",
     "version": "1.0.0",
-    "author": "Deborah Kurata",
-    "description": "Package for the Acme Product Management sample application",
+    "author": "Kal Zoghaibi",
+    "description": "Package for the Tier III Support Tools application",
     "scripts": {
         "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
         "tsc": "tsc",

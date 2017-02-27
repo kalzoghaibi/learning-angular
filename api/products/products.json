@@ -48,5 +48,25 @@
         "price": 35.95,
         "starRating": 4.6,
         "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
+    },
+    {
+        "productId": 15,
+        "productName": "Rocket League",
+        "productCode": "RL-0042",
+        "releaseDate": "October 15, 2015",
+        "description": "Best game ever!",
+        "price": 15.95,
+        "starRating": 5,
+        "imageUrl": "https://boost-rankedboost.netdna-ssl.com/wp-content/uploads/2015/08/Rocket-League-Boosting-300x289.png"
+    },
+    {
+        "productId": 16,
+        "productName": "Phil",
+        "productCode": "pm-0042",
+        "releaseDate": "October 15, 2015",
+        "description": "He's a climber!",
+        "price": 68000.45,
+        "starRating": 5,
+        "imageUrl": "https://c.na4.content.force.com/profilephoto/729600000009Zfs/F"
     }
 ]
