@@ -10,35 +10,35 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
-var product_service_1 = require("./product.service");
-var ProductDetailComponent = (function () {
-    function ProductDetailComponent(_route, _router, _productService) {
+var certificate_service_1 = require("./certificate.service");
+var CertificateDetailComponent = (function () {
+    function CertificateDetailComponent(_route, _router, _certificateService) {
         this._route = _route;
         this._router = _router;
-        this._productService = _productService;
-        this.pageTitle = 'Product Detail';
+        this._certificateService = _certificateService;
+        this.pageTitle = 'Certificate Detail';
     }
-    ProductDetailComponent.prototype.ngOnInit = function () {
+    CertificateDetailComponent.prototype.ngOnInit = function () {
         var _this = this;
         var id = +this._route.snapshot.params['id'];
-        this._productService.getProduct(id)
-            .subscribe(function (product) { return _this.product = product; }, function (error) { return _this.errorMessege = error; });
+        this._certificateService.getCertificate(id)
+            .subscribe(function (certificate) { return _this.certificate = certificate; }, function (error) { return _this.errorMessege = error; });
     };
-    ProductDetailComponent.prototype.onBack = function () {
-        this._router.navigate(['/productlist']);
+    CertificateDetailComponent.prototype.onBack = function () {
+        this._router.navigate(['/certificatelist']);
     };
-    ProductDetailComponent.prototype.onRatingClicked = function (message) {
+    CertificateDetailComponent.prototype.onRatingClicked = function (message) {
         this.pageTitle = this.pageTitle + ': ' + message;
     };
-    return ProductDetailComponent;
+    return CertificateDetailComponent;
 }());
-ProductDetailComponent = __decorate([
+CertificateDetailComponent = __decorate([
     core_1.Component({
-        templateUrl: 'app/products/product-detail.component.html'
+        templateUrl: 'app/certificates/certificate-detail.component.html'
     }),
     __metadata("design:paramtypes", [router_1.ActivatedRoute,
         router_1.Router,
-        product_service_1.ProductService])
-], ProductDetailComponent);
-exports.ProductDetailComponent = ProductDetailComponent;
-//# sourceMappingURL=product-detail.component.js.map
+        certificate_service_1.CertificateService])
+], CertificateDetailComponent);
+exports.CertificateDetailComponent = CertificateDetailComponent;
+//# sourceMappingURL=certificate-detail.component.js.map

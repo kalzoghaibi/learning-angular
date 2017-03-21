@@ -11,7 +11,9 @@ var http_1 = require("@angular/http");
 var router_1 = require("@angular/router");
 var app_component_1 = require("./app.component");
 var welcome_component_1 = require("./home/welcome.component");
+var members_component_1 = require("./members/members.component");
 var product_module_1 = require("./products/product.module");
+var certificate_module_1 = require("./certificates/certificate.module");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -24,14 +26,17 @@ AppModule = __decorate([
             http_1.HttpModule,
             router_1.RouterModule.forRoot([
                 { path: 'welcome', component: welcome_component_1.WelcomeComponent },
+                { path: 'members', component: members_component_1.MembersComponent },
                 { path: '', redirectTo: 'welcome', pathMatch: 'full' },
                 { path: '**', redirectTo: 'welcome', pathMatch: 'full' }
             ]),
-            product_module_1.ProductModule
+            product_module_1.ProductModule,
+            certificate_module_1.CertificateModule
         ],
         declarations: [
             app_component_1.AppComponent,
-            welcome_component_1.WelcomeComponent
+            welcome_component_1.WelcomeComponent,
+            members_component_1.MembersComponent
         ],
         bootstrap: [app_component_1.AppComponent]
     })

@@ -1,11 +1,13 @@
 <div>
     <nav class='navbar navbar-default'>
         <div class='container-fluid col-md-9'>
-            <a class='navbar-brand'>{{pageTitle}}</a>
+            <a class='navbar-brand' [routerLink]="['/welcome']">{{pageTitle}}</a>
             <ul class='nav navbar-nav'>
-                <li><a [routerLink]="['/welcome']">Home</a></li>
-                <li><a [routerLink]="['/products']">Certificate List</a></li>
-                <!--<li><a>Certificate List</a></li>-->
+                <li><a [routerLink]="['/members']">Team Members</a></li>
+                <!--<li><a [routerLink]="['/productlist']">Product List</a></li>-->
+                <li><a [routerLink]="['/certificatelist']">Expiring Certificate List</a></li>
+                <li><a>SSO Documentation Tool</a></li>
+                <li><a href="https://ipipeline.sharepoint.com/sites/support/t3support/SitePages/Home.aspx">T3 SharePoint</a></li>
             </ul>
         </div>
         <div class="panel-body col-md-3">

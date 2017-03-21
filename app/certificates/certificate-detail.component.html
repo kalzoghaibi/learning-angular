@@ -1,0 +1,45 @@
+<div class='panel panel-primary' *ngIf='certificate'>
+    <div class='panel-heading' style='font-size:large'>
+        {{ pageTitle }}: {{ certificate.IDPEntityID }}
+    </div>
+
+    <div class='panel-body'>
+        <div class='row'>
+            <div class='col-md-9'>
+                <div class='row'>
+                    <div class='col-md-3'>IDPEntityID:</div>
+                    <div class='col-md-6'>{{certificate.IDPEntityID}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Issued To:</div>
+                    <div class='col-md-6'>{{certificate.issuedTo}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Issued By:</div>
+                    <div class='col-md-6'>{{certificate.issuedBy}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Issued On:</div>
+                    <div class='col-md-6'>{{certificate.issuedOn}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Expiration Date:</div>
+                    <div class='col-md-6'>{{certificate.expirationDate}}</div>
+                </div>
+                <div class='row'>
+                    <div class='col-md-3'>Days Left:</div>
+                    <div class='col-md-6'>daysleft calc</div>
+                </div>
+            </div>
+            <div class='col-md-3'>
+                <img src='./app/assets/images/certificate-flat.png' title='certificateImg' >
+            </div>
+        </div>
+    </div>
+
+    <div class='panel-footer'>
+        <a class='btn btn-default' (click)='onBack()' style='width:80px'>
+            <i class='glyphicon glyphicon-chevron-left'></i> Back
+        </a>
+    </div>
+</div>

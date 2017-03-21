@@ -10,26 +10,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
-var ProductDetailGuard = (function () {
-    function ProductDetailGuard(_router) {
+var CertificateDetailGuard = (function () {
+    function CertificateDetailGuard(_router) {
         this._router = _router;
     }
-    ProductDetailGuard.prototype.canActivate = function (route) {
+    CertificateDetailGuard.prototype.canActivate = function (route) {
         var id = +route.url[1].path;
         if (isNaN(id) || id < 1) {
-            alert('Invalid product Id');
+            alert('Invalid certificate ID');
             //new nav to redirect to list
-            this._router.navigate(['/productlist']);
+            this._router.navigate(['/certificatelist']);
             //abort current nav
             return false;
         }
         return true;
     };
-    return ProductDetailGuard;
+    return CertificateDetailGuard;
 }());
-ProductDetailGuard = __decorate([
+CertificateDetailGuard = __decorate([
     core_1.Injectable(),
     __metadata("design:paramtypes", [router_1.Router])
-], ProductDetailGuard);
-exports.ProductDetailGuard = ProductDetailGuard;
-//# sourceMappingURL=product-guard.service.js.map
+], CertificateDetailGuard);
+exports.CertificateDetailGuard = CertificateDetailGuard;
+//# sourceMappingURL=certificate-guard.service.js.map
