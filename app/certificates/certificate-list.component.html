@@ -20,11 +20,6 @@
         <table class='table' *ngIf='certificates && certificates.length'>
             <thead>
                 <tr>
-                    <!--<th>
-                        <button class='btn btn-primary' (click)='toggleImage()'>
-                            {{showImage ? 'Hide' : 'Show'}} Image
-                        </button>
-                    </th>-->
                     <th>IDPEntityID</th>
                     <th>Issued To</th>
                     <th>Issued By</th>
@@ -35,9 +30,6 @@
             </thead>
             <tbody>
                 <tr *ngFor='let certificate of certificates | certificateFilter:listFilter'>
-                    <!--<td>
-                        <img *ngIf='showImage' [src]='certificate.imageUrl' [title]='certificate.certificateName' [style.width.px]='imageWidth' [style.margin.px]='imageMargin'>
-                    </td>-->
                     <td><a [routerLink]="['/certificate', certificate.certID]">
                         {{ certificate.IDPEntityID }}
                     </a></td>
@@ -45,7 +37,15 @@
                     <td>{{ certificate.issuedBy }}</td>
                     <td>{{ certificate.issuedOn }}</td>
                     <td>{{ certificate.expirationDate }}</td>
-                    <td>{{ calculateValidDays(certificate.expirationDate) }}</td>
+                    <td *ngIf="calculateValidDays(certificate.expirationDate) == 'Expired'">
+                        <button type="button" class="btn btn-danger" style='width:100px'>{{ calculateValidDays(certificate.expirationDate) }}</button>
+                    </td>
+                    <td *ngIf="calculateValidDays(certificate.expirationDate) == '0 Days'">
+                        <button type="button" class="btn btn-warning" style='width:100px'>{{ calculateValidDays(certificate.expirationDate) }}</button>
+                    </td>
+                    <td *ngIf="(calculateValidDays(certificate.expirationDate) !== 'Expired') && (calculateValidDays(certificate.expirationDate) !== '0 Days')">
+                        <button type="button" class="btn btn-success" style='width:100px'>{{ calculateValidDays(certificate.expirationDate) }}</button>
+                    </td>
                 </tr>
             </tbody>
         </table>

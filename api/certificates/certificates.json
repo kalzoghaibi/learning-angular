@@ -13,7 +13,7 @@
         "issuedTo": "*.ip-express.net",
         "issuedBy": "Go Daddy Secure Certificate Authority - G2",
         "issuedOn": "2/6/2016 10:55:38 AM",
-        "expirationDate": "3/24/2017 5:00:52 PM"
+        "expirationDate": "3/24/2017 9:27:52 PM"
     },
     {
         "certID": 3,
@@ -30,5 +30,101 @@
         "issuedBy": "Authorized Certificate Authority",
         "issuedOn": "2/6/2016 10:55:38 AM",
         "expirationDate": "4/22/2017 5:00:52 PM"
+    },
+    {
+        "certID": 5,
+        "IDPEntityID": "http://fidm.ingsso.com ",
+        "issuedTo": "*.fidm.ingsso.net",
+        "issuedBy": "Go Daddy Secure Certificate Authority - G2",
+        "issuedOn": "2/6/2016 10:55:38 AM",
+        "expirationDate": "3/24/2017 9:27:52 PM"
+    },
+    {
+        "certID": 6,
+        "IDPEntityID": "pennmutual.com/prodplace",
+        "issuedTo": "*pennmutual.com",
+        "issuedBy": "Let's Encrypt Authority X305",
+        "issuedOn": "2/6/2016 10:55:38 AM",
+        "expirationDate": "10/18/2017 9:00:52 PM"
+    },
+    {
+        "certID": 7,
+        "IDPEntityID": "http://bga.onelife.net",
+        "issuedTo": "*.bga.onelife.net",
+        "issuedBy": "Authorized Certificate Authority",
+        "issuedOn": "2/19/2014 10:55:38 AM",
+        "expirationDate": "4/22/2018 5:00:52 PM"
+    },
+    {
+        "certID": 8,
+        "IDPEntityID": "Plaza.Azteca",
+        "issuedTo": "*.yummy.net",
+        "issuedBy": "Secure Certificate Authority X5",
+        "issuedOn": "2/6/2016 10:55:38 AM",
+        "expirationDate": "3/4/2018 4:27:52 PM"
+    },
+    {
+        "certID": 9,
+        "IDPEntityID": "EL-Lemon",
+        "issuedTo": "*ELLEMON.net",
+        "issuedBy": "Lime Certificate Authority - LL6",
+        "issuedOn": "2/6/2016 8:55:38 PM",
+        "expirationDate": "1/8/2020 5:00:52 PM"
+    },
+    {
+        "certID": 10,
+        "IDPEntityID": "Lowland Capital",
+        "issuedTo": "www.lowlowlow.org",
+        "issuedBy": "Authorized Certificate Authorities INC",
+        "issuedOn": "2/6/2017 11:23:45 AM",
+        "expirationDate": "4/5/2025 5:08:52 PM"
+    },
+    {
+        "certID": 11,
+        "IDPEntityID": "http://igo.insuranceandlifestuff.com",
+        "issuedTo": "*.ip-express.net",
+        "issuedBy": "Go Daddy Secure Certificate Authority - G2",
+        "issuedOn": "2/6/2016 10:55:38 AM",
+        "expirationDate": "3/24/2024 9:27:52 PM"
+    },
+    {
+        "certID": 12,
+        "IDPEntityID": "http://life.longlesson.com",
+        "issuedTo": "*lll.bga.net",
+        "issuedBy": "Allied Certificate Authority",
+        "issuedOn": "2/6/2016 10:55:38 AM",
+        "expirationDate": "9/13/2018 5:00:52 PM"
+    },
+    {
+        "certID": 13,
+        "IDPEntityID": "http://TaylorsInsuranceAgency.com",
+        "issuedTo": "www.tia.org",
+        "issuedBy": "Authorized Certificate Committee",
+        "issuedOn": "2/6/2016 10:55:38 AM",
+        "expirationDate": "4/22/2018 7:00:59 AM"
+    },
+    {
+        "certID": 14,
+        "IDPEntityID": "http://wtf.bga.net",
+        "issuedTo": "*.wtf.net",
+        "issuedBy": "Go Daddy Secure Certificate Authority - G2",
+        "issuedOn": "2/6/2016 10:55:38 AM",
+        "expirationDate": "12/16/2017 12:27:52 AM"
+    },
+    {
+        "certID": 16,
+        "IDPEntityID": "hihohiho.com",
+        "issuedTo": "*offto.workwego.net",
+        "issuedBy": "Go Snow Certificate Authority",
+        "issuedOn": "2/6/2016 8:40:38 PM",
+        "expirationDate": "11/18/2017 5:00:52 PM"
+    },
+    {
+        "certID": 17,
+        "IDPEntityID": "http://rocketleagueaddiction.com",
+        "issuedTo": "www.theaddictionisreal.org",
+        "issuedBy": "Authorized Rocket Powered Certificate Authority",
+        "issuedOn": "2/6/2016 10:55:38 AM",
+        "expirationDate": "4/22/2012 5:50:52 PM"
     }
 ]

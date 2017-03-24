@@ -22,10 +22,6 @@ export class CertificateListComponent implements OnInit {
 
     }
 
-    toggleImage(): void {
-        this.showImage = !this.showImage;
-    }
-
     ngOnInit(): void {
         this._certificateService.getCertificates()
             .subscribe(

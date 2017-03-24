@@ -18,9 +18,6 @@ var CertificateListComponent = (function () {
         this.imageMargin = 2;
         this.showImage = false;
     }
-    CertificateListComponent.prototype.toggleImage = function () {
-        this.showImage = !this.showImage;
-    };
     CertificateListComponent.prototype.ngOnInit = function () {
         var _this = this;
         this._certificateService.getCertificates()
