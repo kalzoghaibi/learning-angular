@@ -18,8 +18,4 @@ export class Certificate implements ICertificate {
         public issuedOn: string,
         public expirationDate: string) {
     }
-
-    calculateValidDays(expirationDate: string): string {
-        return null;
-    }
 }

@@ -8,9 +8,6 @@ var Certificate = (function () {
         this.issuedOn = issuedOn;
         this.expirationDate = expirationDate;
     }
-    Certificate.prototype.calculateValidDays = function (expirationDate) {
-        return null;
-    };
     return Certificate;
 }());
 exports.Certificate = Certificate;

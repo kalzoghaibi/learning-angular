@@ -5,34 +5,34 @@
 
     <div class='panel-body'>
         <div class='row'>
+            <div class='col-md-3' style='padding-left:70px'>
+                <img src='./app/assets/images/certificate-flat.png' title='certificateImg' style='width:120px' >
+            </div>
             <div class='col-md-9'>
                 <div class='row'>
                     <div class='col-md-3'>IDPEntityID:</div>
-                    <div class='col-md-6'>{{certificate.IDPEntityID}}</div>
+                    <div class='col-md-6'>{{ certificate.IDPEntityID }}</div>
                 </div>
                 <div class='row'>
                     <div class='col-md-3'>Issued To:</div>
-                    <div class='col-md-6'>{{certificate.issuedTo}}</div>
+                    <div class='col-md-6'>{{ certificate.issuedTo }}</div>
                 </div>
                 <div class='row'>
                     <div class='col-md-3'>Issued By:</div>
-                    <div class='col-md-6'>{{certificate.issuedBy}}</div>
+                    <div class='col-md-6'>{{ certificate.issuedBy }}</div>
                 </div>
                 <div class='row'>
                     <div class='col-md-3'>Issued On:</div>
-                    <div class='col-md-6'>{{certificate.issuedOn}}</div>
+                    <div class='col-md-6'>{{ certificate.issuedOn }}</div>
                 </div>
                 <div class='row'>
                     <div class='col-md-3'>Expiration Date:</div>
-                    <div class='col-md-6'>{{certificate.expirationDate}}</div>
+                    <div class='col-md-6'>{{ certificate.expirationDate }}</div>
                 </div>
                 <div class='row'>
-                    <div class='col-md-3'>Days Left:</div>
-                    <div class='col-md-6'>daysleft calc</div>
+                    <div class='col-md-3'>Time Left:</div>
+                    <div class='col-md-6'>{{ calculateTimeLeft(certificate.expirationDate) }}</div>
                 </div>
-            </div>
-            <div class='col-md-3'>
-                <img src='./app/assets/images/certificate-flat.png' title='certificateImg' >
             </div>
         </div>
     </div>

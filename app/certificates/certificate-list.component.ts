@@ -32,7 +32,25 @@ export class CertificateListComponent implements OnInit {
             certificates => this.certificates = certificates, error => this.errorMessege = <any>error);
     }
 
-    onRatingClicked(message: string): void {
-        this.pageTitle = 'Expiring Certificate List: ' + message;
+    calculateValidDays(expirationDate: string): string {
+
+        var today = new Date();
+        var expDate = new Date(expirationDate);
+        var Result: string;
+        var daysLeft: number = (expDate.getTime() - today.getTime()) / 86400000;
+        if (daysLeft < 0) {
+            // expired cert
+            Result = "Expired";
+        } else {
+            // get total seconds between the times
+            var delta = Math.abs(expDate.getTime() - today.getTime()) / 1000;
+
+            // calculate (and subtract) whole days
+            var days = Math.floor(delta / 86400);
+            delta -= days * 86400;
+
+            Result = days + " Days";
+        }
+        return Result;
     }
 }

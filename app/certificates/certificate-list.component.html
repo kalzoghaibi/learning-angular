@@ -5,7 +5,7 @@
 
     <div class='panel-body'>
         <div class='row'>
-            <div class='col-md-2'>Filter by:</div>
+            <div class='col-md-2'>Search by IDPEntityID:</div>
             <div calss='col-md-4'>
                 <input type='text' [(ngModel)]='listFilter' />
             </div>
@@ -45,7 +45,7 @@
                     <td>{{ certificate.issuedBy }}</td>
                     <td>{{ certificate.issuedOn }}</td>
                     <td>{{ certificate.expirationDate }}</td>
-                    <td>DaysLeftCalculation</td>
+                    <td>{{ calculateValidDays(certificate.expirationDate) }}</td>
                 </tr>
             </tbody>
         </table>

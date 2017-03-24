@@ -26,8 +26,24 @@ var CertificateListComponent = (function () {
         this._certificateService.getCertificates()
             .subscribe(function (certificates) { return _this.certificates = certificates; }, function (error) { return _this.errorMessege = error; });
     };
-    CertificateListComponent.prototype.onRatingClicked = function (message) {
-        this.pageTitle = 'Expiring Certificate List: ' + message;
+    CertificateListComponent.prototype.calculateValidDays = function (expirationDate) {
+        var today = new Date();
+        var expDate = new Date(expirationDate);
+        var Result;
+        var daysLeft = (expDate.getTime() - today.getTime()) / 86400000;
+        if (daysLeft < 0) {
+            // expired cert
+            Result = "Expired";
+        }
+        else {
+            // get total seconds between the times
+            var delta = Math.abs(expDate.getTime() - today.getTime()) / 1000;
+            // calculate (and subtract) whole days
+            var days = Math.floor(delta / 86400);
+            delta -= days * 86400;
+            Result = days + " Days";
+        }
+        return Result;
     };
     return CertificateListComponent;
 }());
