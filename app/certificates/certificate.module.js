@@ -10,6 +10,7 @@ var router_1 = require("@angular/router");
 var certificate_list_component_1 = require("./certificate-list.component");
 var certificate_detail_component_1 = require("./certificate-detail.component");
 var certificate_filter_pipe_1 = require("./certificate-filter.pipe");
+var certificate_sortdate_pipe_1 = require("./certificate-sortdate.pipe");
 var certificate_guard_service_1 = require("./certificate-guard.service");
 var certificate_service_1 = require("./certificate.service");
 var shared_module_1 = require("../shared/shared.module");
@@ -23,7 +24,8 @@ CertificateModule = __decorate([
         declarations: [
             certificate_list_component_1.CertificateListComponent,
             certificate_detail_component_1.CertificateDetailComponent,
-            certificate_filter_pipe_1.CertificateFilterPipe
+            certificate_filter_pipe_1.CertificateFilterPipe,
+            certificate_sortdate_pipe_1.CertificateSortDatePipe
         ],
         imports: [
             shared_module_1.SharedModule,

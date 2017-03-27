@@ -29,7 +29,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor='let certificate of certificates | certificateFilter:listFilter'>
+                <tr *ngFor='let certificate of certificates | certificateFilter:listFilter | sortByExpDate'>
                     <td><a [routerLink]="['/certificate', certificate.certID]">
                         {{ certificate.IDPEntityID }}
                     </a></td>

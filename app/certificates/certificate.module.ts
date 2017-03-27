@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { CertificateListComponent } from './certificate-list.component';
 import { CertificateDetailComponent } from './certificate-detail.component';
 import { CertificateFilterPipe } from './certificate-filter.pipe';
+import { CertificateSortDatePipe } from './certificate-sortdate.pipe';
 import { CertificateDetailGuard } from './certificate-guard.service';
 import { CertificateService } from './certificate.service';
 import { SharedModule } from '../shared/shared.module';
@@ -11,7 +12,8 @@ import { SharedModule } from '../shared/shared.module';
     declarations: [
         CertificateListComponent,
         CertificateDetailComponent,
-        CertificateFilterPipe
+        CertificateFilterPipe,
+        CertificateSortDatePipe
     ],
     imports: [
         SharedModule,

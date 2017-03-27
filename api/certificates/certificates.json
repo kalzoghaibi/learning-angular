@@ -61,7 +61,7 @@
         "issuedTo": "*.yummy.net",
         "issuedBy": "Secure Certificate Authority X5",
         "issuedOn": "2/6/2016 10:55:38 AM",
-        "expirationDate": "3/4/2018 4:27:52 PM"
+        "expirationDate": "3/27/2017 8:27:52 PM"
     },
     {
         "certID": 9,
@@ -77,7 +77,7 @@
         "issuedTo": "www.lowlowlow.org",
         "issuedBy": "Authorized Certificate Authorities INC",
         "issuedOn": "2/6/2017 11:23:45 AM",
-        "expirationDate": "4/5/2025 5:08:52 PM"
+        "expirationDate": "3/27/2017 5:08:52 PM"
     },
     {
         "certID": 11,
