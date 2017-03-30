@@ -5,7 +5,8 @@
         "issuedTo": "radisonbrokerage.com",
         "issuedBy": "Let's Encrypt Authority X3",
         "issuedOn": "11/16/2016 4:03:00 PM",
-        "expirationDate": "2/14/2017 4:03:00 PM"
+        "expirationDate": "2/14/2017 4:03:00 PM",
+        "certStatus" : "Completed"
     },
     {
         "certID": 2,
@@ -13,7 +14,8 @@
         "issuedTo": "*.ip-express.net",
         "issuedBy": "Go Daddy Secure Certificate Authority - G2",
         "issuedOn": "2/6/2016 10:55:38 AM",
-        "expirationDate": "3/24/2017 9:27:52 PM"
+        "expirationDate": "3/24/2017 9:27:52 PM",
+        "certStatus" : "Warning Sent"
     },
     {
         "certID": 3,
@@ -21,7 +23,8 @@
         "issuedTo": "*LPL.net",
         "issuedBy": "Go Mommy Secure Certificate Authority - G6",
         "issuedOn": "2/6/2016 10:55:38 AM",
-        "expirationDate": "11/18/2017 5:00:52 PM"
+        "expirationDate": "11/18/2017 5:00:52 PM",
+        "certStatus" : "Completed"
     },
     {
         "certID": 4,
@@ -29,7 +32,8 @@
         "issuedTo": "www.bigbga.org",
         "issuedBy": "Authorized Certificate Authority",
         "issuedOn": "2/6/2016 10:55:38 AM",
-        "expirationDate": "4/22/2017 5:00:52 PM"
+        "expirationDate": "4/22/2017 5:00:52 PM",
+        "certStatus" : "Outage"
     },
     {
         "certID": 5,
@@ -37,7 +41,8 @@
         "issuedTo": "*.fidm.ingsso.net",
         "issuedBy": "Go Daddy Secure Certificate Authority - G2",
         "issuedOn": "2/6/2016 10:55:38 AM",
-        "expirationDate": "3/24/2017 9:27:52 PM"
+        "expirationDate": "3/24/2017 9:27:52 PM",
+        "certStatus" : "Completed"
     },
     {
         "certID": 6,
@@ -45,7 +50,8 @@
         "issuedTo": "*pennmutual.com",
         "issuedBy": "Let's Encrypt Authority X305",
         "issuedOn": "2/6/2016 10:55:38 AM",
-        "expirationDate": "10/18/2017 9:00:52 PM"
+        "expirationDate": "10/18/2017 9:00:52 PM",
+        "certStatus" : ""
     },
     {
         "certID": 7,
@@ -53,7 +59,8 @@
         "issuedTo": "*.bga.onelife.net",
         "issuedBy": "Authorized Certificate Authority",
         "issuedOn": "2/19/2014 10:55:38 AM",
-        "expirationDate": "4/22/2018 5:00:52 PM"
+        "expirationDate": "4/22/2018 5:00:52 PM",
+        "certStatus" : "Completed"
     },
     {
         "certID": 8,
@@ -61,7 +68,8 @@
         "issuedTo": "*.yummy.net",
         "issuedBy": "Secure Certificate Authority X5",
         "issuedOn": "2/6/2016 10:55:38 AM",
-        "expirationDate": "3/27/2017 8:27:52 PM"
+        "expirationDate": "3/27/2017 8:27:52 PM",
+        "certStatus" : "Responded"
     },
     {
         "certID": 9,
@@ -69,7 +77,8 @@
         "issuedTo": "*ELLEMON.net",
         "issuedBy": "Lime Certificate Authority - LL6",
         "issuedOn": "2/6/2016 8:55:38 PM",
-        "expirationDate": "1/8/2020 5:00:52 PM"
+        "expirationDate": "1/8/2020 5:00:52 PM",
+        "certStatus" : "Completed"
     },
     {
         "certID": 10,
@@ -77,7 +86,8 @@
         "issuedTo": "www.lowlowlow.org",
         "issuedBy": "Authorized Certificate Authorities INC",
         "issuedOn": "2/6/2017 11:23:45 AM",
-        "expirationDate": "3/27/2017 5:08:52 PM"
+        "expirationDate": "3/27/2017 5:08:52 PM",
+        "certStatus" : "Completed"
     },
     {
         "certID": 11,
@@ -85,7 +95,8 @@
         "issuedTo": "*.ip-express.net",
         "issuedBy": "Go Daddy Secure Certificate Authority - G2",
         "issuedOn": "2/6/2016 10:55:38 AM",
-        "expirationDate": "3/24/2024 9:27:52 PM"
+        "expirationDate": "3/24/2024 9:27:52 PM",
+        "certStatus" : "Update Scheduled"
     },
     {
         "certID": 12,
@@ -93,7 +104,8 @@
         "issuedTo": "*lll.bga.net",
         "issuedBy": "Allied Certificate Authority",
         "issuedOn": "2/6/2016 10:55:38 AM",
-        "expirationDate": "9/13/2018 5:00:52 PM"
+        "expirationDate": "9/13/2018 5:00:52 PM",
+        "certStatus" : "Update Scheduled"
     },
     {
         "certID": 13,
@@ -101,7 +113,8 @@
         "issuedTo": "www.tia.org",
         "issuedBy": "Authorized Certificate Committee",
         "issuedOn": "2/6/2016 10:55:38 AM",
-        "expirationDate": "4/22/2018 7:00:59 AM"
+        "expirationDate": "4/22/2018 7:00:59 AM",
+        "certStatus" : "Completed"
     },
     {
         "certID": 14,
@@ -109,7 +122,8 @@
         "issuedTo": "*.wtf.net",
         "issuedBy": "Go Daddy Secure Certificate Authority - G2",
         "issuedOn": "2/6/2016 10:55:38 AM",
-        "expirationDate": "12/16/2017 12:27:52 AM"
+        "expirationDate": "12/16/2017 12:27:52 AM",
+        "certStatus" : "Completed"
     },
     {
         "certID": 16,
@@ -117,7 +131,8 @@
         "issuedTo": "*offto.workwego.net",
         "issuedBy": "Go Snow Certificate Authority",
         "issuedOn": "2/6/2016 8:40:38 PM",
-        "expirationDate": "11/18/2017 5:00:52 PM"
+        "expirationDate": "11/18/2017 5:00:52 PM",
+        "certStatus" : "Acknowledged"
     },
     {
         "certID": 17,
@@ -125,6 +140,7 @@
         "issuedTo": "www.theaddictionisreal.org",
         "issuedBy": "Authorized Rocket Powered Certificate Authority",
         "issuedOn": "2/6/2016 10:55:38 AM",
-        "expirationDate": "4/22/2012 5:50:52 PM"
+        "expirationDate": "4/22/2012 5:50:52 PM",
+        "certStatus" : "Acknowledged"
     }
 ]

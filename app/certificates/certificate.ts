@@ -6,6 +6,7 @@ export interface ICertificate {
     issuedBy: string;
     issuedOn: string;
     expirationDate: string;
+    certStatus: string;
 }
 
 export class Certificate implements ICertificate {
@@ -16,6 +17,7 @@ export class Certificate implements ICertificate {
         public issuedTo: string,
         public issuedBy: string,
         public issuedOn: string,
-        public expirationDate: string) {
+        public expirationDate: string,
+        public certStatus: string) {
     }
 }

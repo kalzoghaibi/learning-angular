@@ -20,6 +20,7 @@
         <table class='table' *ngIf='certificates && certificates.length'>
             <thead>
                 <tr>
+                    <th>Status</th>
                     <th>IDPEntityID</th>
                     <th>Issued To</th>
                     <th>Issued By</th>
@@ -30,6 +31,13 @@
             </thead>
             <tbody>
                 <tr *ngFor='let certificate of certificates | certificateFilter:listFilter | sortByExpDate'>
+                    <td>
+                        <div class="form-group">
+                            <select class="form-control" id="selCertStatus" name="selCertStatus" style='width:150px'>
+                                <option *ngFor="let x of Statuses" [ngValue]="x" [attr.selected]="checkStatus(x,certificate.certStatus) ? true : null">{{x}}</option>
+                            </select>
+                        </div>
+                    </td>
                     <td><a [routerLink]="['/certificate', certificate.certID]">
                         {{ certificate.IDPEntityID }}
                     </a></td>

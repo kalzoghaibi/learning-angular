@@ -15,6 +15,7 @@ export class CertificateListComponent implements OnInit {
     showImage: boolean = false;
     listFilter: string;
     errorMessege: string;
+    Statuses = Array<string>();
 
     certificates: ICertificate[];
 
@@ -26,6 +27,17 @@ export class CertificateListComponent implements OnInit {
         this._certificateService.getCertificates()
             .subscribe(
             certificates => this.certificates = certificates, error => this.errorMessege = <any>error);
+
+        this.Statuses = Array<string>();
+        this.Statuses.push('Please select');
+        this.Statuses.push('Warning Sent');
+        this.Statuses.push('Responded');
+        this.Statuses.push('Outage');
+        this.Statuses.push('Completed');
+        this.Statuses.push('Acknowledged');
+        this.Statuses.push('Metadata Sent');
+        this.Statuses.push('Update Scheduled');
+
     }
 
     calculateValidDays(expirationDate: string): string {
@@ -48,5 +60,14 @@ export class CertificateListComponent implements OnInit {
             Result = days + " Days";
         }
         return Result;
+    }
+
+    checkStatus(x: string, certStatus: string): boolean {
+
+        if (x == certStatus) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

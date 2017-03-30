@@ -17,11 +17,21 @@ var CertificateListComponent = (function () {
         this.imageWidth = 50;
         this.imageMargin = 2;
         this.showImage = false;
+        this.Statuses = Array();
     }
     CertificateListComponent.prototype.ngOnInit = function () {
         var _this = this;
         this._certificateService.getCertificates()
             .subscribe(function (certificates) { return _this.certificates = certificates; }, function (error) { return _this.errorMessege = error; });
+        this.Statuses = Array();
+        this.Statuses.push('Please select');
+        this.Statuses.push('Warning Sent');
+        this.Statuses.push('Responded');
+        this.Statuses.push('Outage');
+        this.Statuses.push('Completed');
+        this.Statuses.push('Acknowledged');
+        this.Statuses.push('Metadata Sent');
+        this.Statuses.push('Update Scheduled');
     };
     CertificateListComponent.prototype.calculateValidDays = function (expirationDate) {
         var today = new Date();
@@ -41,6 +51,14 @@ var CertificateListComponent = (function () {
             Result = days + " Days";
         }
         return Result;
+    };
+    CertificateListComponent.prototype.checkStatus = function (x, certStatus) {
+        if (x == certStatus) {
+            return true;
+        }
+        else {
+            return false;
+        }
     };
     return CertificateListComponent;
 }());

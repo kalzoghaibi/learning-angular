@@ -2,6 +2,7 @@ import { PipeTransform, Pipe } from '@angular/core';
 import { ICertificate } from './certificate';
 
 @Pipe({name: "sortByExpDate"})
+
 export class CertificateSortDatePipe {
   transform(array: Array<Date>): Array<Date> {
     array.sort((a: Date, b: Date) => {
